@@ -16,7 +16,8 @@ export GTK_CLASS_FIX=1
 # Deploy dependencies
 quick-sharun /usr/bin/epiphany \
              /usr/share/help/*/epiphany \
-             /usr/bin/xdg-dbus-proxy
+             /usr/bin/xdg-dbus-proxy \
+             /usr/lib/gio/modules/libgiognomeproxy.so
 
 # Additional changes can be done in between here
 
