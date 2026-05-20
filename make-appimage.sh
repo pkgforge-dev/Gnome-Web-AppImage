@@ -15,7 +15,8 @@ export GTK_CLASS_FIX=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/epiphany \
-             /usr/share/help/*/epiphany
+             /usr/share/help/*/epiphany \
+             /usr/bin/xdg-dbus-proxy
 
 # Additional changes can be done in between here
 
