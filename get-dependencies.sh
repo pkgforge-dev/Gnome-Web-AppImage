@@ -6,7 +6,8 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm epiphany
+pacman -Syu --noconfirm epiphany enchant expac
+pacman -Syu --needed --noconfirm --asdeps $(expac -Ss '%o' enchant)
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
