@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm epiphany enchant expac gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav
+pacman -Syu --noconfirm epiphany enchant expac gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav gst-plugin-va
 pacman -Syu --needed --noconfirm --asdeps $(expac -Ss '%o' enchant)
 
 echo "Installing debloated packages..."
